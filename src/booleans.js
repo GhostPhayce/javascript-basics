@@ -1,62 +1,32 @@
-const negate = a => {
-  // your code here
-};
+const negate = a => !a;
 
-const both = (a, b) => {
-  // your code here
-};
+const both = (a, b) => a && b;
 
-const either = (a, b) => {
-  // your code here
-};
+const either = (a, b) => a || b;
 
-const none = (a, b) => {
-  // your code here
-};
+const none = (a, b) => !a && !b;
 
-const one = (a, b) => {
-  // your code here
-};
+const one = (a, b) => a !== b;
 
-const truthiness = a => {
-  // your code here
-};
+const truthiness = a => !!a;
 
-const isEqual = (a, b) => {
-  // your code here
-};
+const isEqual = (a, b) => a === b;
 
-const isGreaterThan = (a, b) => {
-  // your code here
-};
+const isGreaterThan = (a, b) => a > b;
 
-const isLessThanOrEqualTo = (a, b) => {
-  // your code here
-};
+const isLessThanOrEqualTo = (a, b) => a <= b;
 
-const isOdd = a => {
-  // your code here
-};
+const isOdd = a => a % 2 !== 0;
 
-const isEven = a => {
-  // your code here
-};
+const isEven = a => a % 2 === 0;
 
-const isSquare = a => {
-  // your code here
-};
+const isSquare = a => Number.isInteger(Math.sqrt(a));
 
-const startsWith = (char, string) => {
-  // your code here
-};
+const startsWith = (char, string) => string[0] === char;
 
-const containsVowels = string => {
-  // your code here
-};
+const containsVowels = string => Boolean(string.match(/[aeiou]/i));
 
-const isLowerCase = string => {
-  // your code here
-};
+const isLowerCase = string => string.toLowerCase() === string;
 
 module.exports = {
   negate,
